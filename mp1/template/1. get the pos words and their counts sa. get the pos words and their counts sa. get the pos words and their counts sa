@@ -1,0 +1,12 @@
+1. get the pos words and their counts same for neg
+2. get the number of unique words and their counts
+
+
+probabilityWordGivenTypePos
+probabilityWordGivenTypePos[eachWord] = (posWordsAndTheirCountsDict[eachWord]+laplace)/( countPosWords+laplace*(unqiueWordsTotalNumber+1) )
+
+prob of each word with laplace and the word it self
+
+if the word is found int he positive section get the log of the laplace value
+
+other wise do 0 lapalce
